@@ -7,3 +7,5 @@ version          "0.1.0"
 
 depends          "rbenv" # http://fnichol.github.com/chef-rbenv/
 depends          "apache2"
+
+supports         "debian"
