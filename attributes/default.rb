@@ -33,4 +33,3 @@ default['jekyll']['gem']['binary'] = nil
 
 default['jekyll']['rbenv']['activated'] = false
 default['jekyll']['rbenv']['version'] = '1.9.3-p194'
-default['jekyll']['rbenv']['root_path'] = '/usr/local/rbenv'
