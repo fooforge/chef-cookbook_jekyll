@@ -40,7 +40,7 @@ Or add it to your Librarian-chef `Cheffile`:
 
 ### Configuration
 
-The best way to configure the cookbook for your blog is to add a specific role for it and to set needed attributes via `default_attributes`.
+The best way to configure the cookbook for your blog is to add a separate role for each Jekyll blog and to set needed attributes via `default_attributes`.
 
 Here's an example:
 
