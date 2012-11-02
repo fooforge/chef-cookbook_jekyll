@@ -1,4 +1,42 @@
-chef-cookbook_jekyll
-====================
+# jekyll-evernote_rss
 
-Generic cookbook for deploying Jekyll-backed blogs
+## Synopsis
+
+This is a small chef cookbook for deploying your [Jekyll](https://github.com/mojombo/jekyll) blogs.
+
+## Requirements
+
+* [Chef Solo](http://wiki.opscode.com/display/chef/Chef+Solo) or [Chef Server](http://wiki.opscode.com/display/chef/Chef+Server)
+
+## Usage
+
+
+## Development
+
+* Source hosted at [GitHub](https://github.com/fooforge/chef-cookbook_jekyll)
+* Report issues/Questions/Feature requests on [GitHub](https://github.com/fooforge/chef-cookbook_jekyll/issues) as well
+
+Pull requests are very welcome! Make sure your patches are well tested.
+
+## License
+
+Copyright (c) 2012 Mike Adolphs
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
