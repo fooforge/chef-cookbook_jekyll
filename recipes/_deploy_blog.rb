@@ -9,12 +9,7 @@ end
 
 # Build command with options if defined for blog generation
 unless node['jekyll']['options'].empty?
-  options = Array.new
-
-  node['jekyll']['options'].each do |opt|
-    options << opt.prepend('--')
-  end
-  jeckyll_options = options.join(' ')
+  options = node['jekyll']['options'].join(' ')
   jekyll_command = "jekyll #{options}"
 else
   jekyll_command = "jekyll"
