@@ -26,6 +26,7 @@ default['jekyll']['access_rights'] = 0755
 default['jekyll']['domain_name'] = node['fqdn']
 
 default['jekyll']['packages'] = []
+default['jekyll']['command'] = 'jekyll'
 default['jekyll']['options'] = []
 
 default['jekyll']['gem']['source'] = 'https://rubygems.org/'

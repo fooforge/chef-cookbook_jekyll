@@ -10,9 +10,9 @@ end
 # Build command with options if defined for blog generation
 unless node['jekyll']['options'].empty?
   options = node['jekyll']['options'].join(' ')
-  jekyll_command = "jekyll #{options}"
+  jekyll_command = "#{node['jekyll']['command']} #{options}"
 else
-  jekyll_command = "jekyll"
+  jekyll_command = "#{node['jekyll']['command']}"
 end
 
 unless node['jekyll']['rbenv']['activated']
