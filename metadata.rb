@@ -1,3 +1,4 @@
+name		 'jekyll'
 maintainer       "Mike Adolphs"
 maintainer_email "mike@fooforge.com"
 license          "Apache 2.0"
