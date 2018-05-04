@@ -1,3 +1,5 @@
+return if node['jekyll']['apache']['enabled'] == false
+
 domain_name = node['jekyll']['domain_name']
 
 web_app "jekyll-#{domain_name}" do
