@@ -26,7 +26,7 @@ unless node['jekyll']['rbenv']['activated']
     cwd node['jekyll']['deploy_directory']
     command "bundle install && #{jekyll_command}"
     action :run
-    not_if File.exists?("#{node['jekyll']['deploy_directory']}/_config.yml")
+    not_if "test -f #{node['jekyll']['deploy_directory']}/_config.yml"
   end
 else
   rbenv_script 'Deploy Jekyll blog' do
