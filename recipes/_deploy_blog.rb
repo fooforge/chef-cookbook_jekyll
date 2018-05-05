@@ -24,9 +24,9 @@ end
 unless node['jekyll']['rbenv']['activated']
   execute 'Deploy Jekyll blog' do
     cwd node['jekyll']['deploy_directory']
-    command "bundle install && #{jekyll_command}"
+    command "bundle install && #{jekyll_command} && touch /var/chef/cache/jekyll_bootstrapped"
     action :run
-    not_if "test -f #{node['jekyll']['deploy_directory']}/_config.yml"
+    not_if "test -f /var/chef/cache/jekyll_bootstrapped"
   end
 else
   rbenv_script 'Deploy Jekyll blog' do
