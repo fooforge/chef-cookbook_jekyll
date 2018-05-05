@@ -10,7 +10,7 @@ git node['jekyll']['deploy_directory'] do
   user node['jekyll']['user']
   group node['jekyll']['group']
   action :sync 
-  notifies :run, execute['jekyll-build'], :immediately
+  notifies :run, 'execute[jekyll-build]', :immediately
 end
 
 # Build command with options if defined for blog generation
