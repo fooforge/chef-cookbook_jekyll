@@ -2,6 +2,7 @@ execute "jekyll-build" do
   cwd node['jekyll']['deploy_directory']
   command "jekyll build"
   action :nothing
+  only_if "test -f /var/chef/cache/jekyll_bootstrapped"
 end
 
 git node['jekyll']['deploy_directory'] do
@@ -9,7 +10,7 @@ git node['jekyll']['deploy_directory'] do
   reference node['jekyll']['reference']
   user node['jekyll']['user']
   group node['jekyll']['group']
-  action :sync 
+  action :sync
   notifies :run, 'execute[jekyll-build]', :immediately
 end
 
