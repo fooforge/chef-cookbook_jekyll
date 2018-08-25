@@ -26,6 +26,7 @@ default['jekyll']['access_rights'] = 0755
 default['jekyll']['domain_name'] = node['fqdn']
 
 default['jekyll']['packages'] = []
+default['jekyll']['command'] = 'jekyll'
 default['jekyll']['options'] = []
 
 default['jekyll']['gem']['source'] = 'https://rubygems.org/'
@@ -33,3 +34,5 @@ default['jekyll']['gem']['binary'] = nil
 
 default['jekyll']['rbenv']['activated'] = false
 default['jekyll']['rbenv']['version'] = '1.9.3-p194'
+
+default['jekyll']['apache']['enabled'] = false
